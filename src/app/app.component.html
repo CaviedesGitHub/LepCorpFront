@@ -1,0 +1,157 @@
+<div class="container mt-4">
+  <h2 class="text-center">Create a new Query</h2>
+  <form
+    [formGroup]="consultaForm"
+    (ngSubmit)="!consultaForm.invalid && createConsulta(consultaForm.value)"
+  >
+    <!--Contact-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="contacto">Contact</label>
+      <input
+        novalidate
+        id="contacto"
+        class="form-control"
+        formControlName="contacto"
+        placeholder="Contact's name"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          consultaForm.get('contacto')!.hasError('required') &&
+          consultaForm.get('contacto')!.touched
+        "
+      >
+        Contact required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="consultaForm.get('contacto')!.hasError('minlength')"
+      >
+        contact too short
+      </div>
+    </div>
+ 
+    <!--Company-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="empresa">Company</label>
+      <input
+        novalidate
+        id="empresa"
+        class="form-control"
+        formControlName="empresa"
+        placeholder="Company's name"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          consultaForm.get('empresa')!.hasError('required') &&
+          consultaForm.get('empresa')!.touched
+        "
+      >
+        Company required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="consultaForm.get('empresa')!.hasError('minlength')"
+      >
+        Company too short
+      </div>
+    </div>
+ 
+    <!-- Correo -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="correo">E-Mail</label>
+      <input
+        novalidate
+        id="correo"
+        class="form-control"
+        formControlName="correo"
+        placeholder="E-Mail"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          consultaForm.get('correo')!.hasError('required') &&
+          consultaForm.get('correo')!.touched
+        "
+      >
+        E-mail required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="consultaForm.get('correo')!.hasError('minlength')"
+      >
+        E-Mail too short
+      </div>
+    </div>
+
+    <!-- Cell Phone -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="celular">Cell Phone</label>
+      <input
+        novalidate
+        id="celular"
+        class="form-control"
+        formControlName="celular"
+        placeholder="Cell Phone"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          consultaForm.get('celular')!.hasError('required') &&
+          consultaForm.get('celular')!.touched
+        "
+      >
+        Cell Phone required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="consultaForm.get('celular')!.hasError('minlength')"
+      >
+        Cell Phone too short
+      </div>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="mensaje">Message</label>
+      <input
+        novalidate
+        id="mensaje"
+        class="form-control"
+        formControlName="mensaje"
+        placeholder="Brief description of the consultation"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          consultaForm.get('mensaje')!.hasError('required') &&
+          consultaForm.get('mensaje')!.touched
+        "
+      >
+      Brief description of the consultation required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="consultaForm.get('mensaje')!.hasError('maxlength')"
+      >
+        Brief description of the consultation too long
+      </div>
+    </div>
+ 
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="!consultaForm.valid"
+    >
+      Create
+    </button>
+    <button
+      type="button"
+      class="btn btn-danger ml-3"
+      (click)="cancelCreation()"
+    >
+      Clear
+    </button>
+  </form>
+ </div>
