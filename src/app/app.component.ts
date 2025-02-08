@@ -3,7 +3,7 @@ import * as $ from 'jquery';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Consulta } from './Consulta';
 import { ConsultaService } from './Consulta.service';
-//import { ToastrService } from 'ngx-toastr';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-root',
@@ -17,15 +17,15 @@ export class AppComponent implements OnInit{
   constructor(
     private formBuilder: FormBuilder,
     private consultaService: ConsultaService,
-    //private toastr: ToastrService
+    private toastr: ToastrService
   ) { }
 
   ngOnInit(): void {
-    $(document).ready(function(){
-      $("#btnAbrir").on('click', function(){
-        alert("Mensaje desde el boton");
-      })
-    });
+    //$(document).ready(function(){
+    //  $("#btnAbrir").on('click', function(){
+    //    alert("Mensaje desde el boton");
+    //  })
+    //});
 
     this.consultaForm = this.formBuilder.group({
       contacto: ["", [Validators.required, Validators.minLength(2)]],
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit{
   createConsulta(consulta: Consulta){
     this.consultaService.createConsulta(consulta).subscribe(consulta=>{
       console.info("The Query was created: ", consulta)
-      //this.toastr.success("Confirmation", "Query created")
+      this.toastr.success("Confirmation", "Query created")
       this.consultaForm.reset();
     })
 

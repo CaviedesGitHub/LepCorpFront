@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 import { Consulta } from './Consulta';
 import { Observable } from 'rxjs';
 
@@ -13,6 +13,9 @@ export class ConsultaService {
   constructor(private http: HttpClient) { }
 
   createConsulta(consulta: Consulta): Observable<Consulta> {
+    console.log('=========')
+    console.log(this.apiUrl)
+    console.log('=========')
     return this.http.post<Consulta>(this.apiUrl+'/consultas', consulta);
   }
 

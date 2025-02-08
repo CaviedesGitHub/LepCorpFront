@@ -1,4 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: blueviolet;
+}
+
+
+#main{
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+    background-color: red;
+    width: 98%;
+    min-width: 98%;
+    max-width: 98%;
+}
+
+#contenido{
+    display: table-row;
+    margin: 0;
+    overflow: hidden;
+    height: 1%;
+    background-color: bisque;
+}
+
+#izq{
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    display: table-cell;
+    vertical-align: top;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#der{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
+    display: table-cell;
+    vertical-align: top;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#formulario{
+    display: block;
+    background-color: red;
+    border-color: aquamarine;
+    border-width: 1;
+    border-style: solid;
+    width: 20%;
+    margin: 0;
+}
