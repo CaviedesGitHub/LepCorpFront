@@ -1,0 +1,22 @@
+#filacontacto{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#tituloprincipal{
+    margin-top: 3em;
+}
+
+#divimgcontacto{
+    text-align:center;
+}
+
+#imgcontacto{
+    width:90%;
+    height:auto;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: auto;
+    max-height: auto;
+    border-radius: 1.0em;
+}

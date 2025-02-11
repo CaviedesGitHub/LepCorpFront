@@ -12,6 +12,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AppComponent implements OnInit{
   title = 'lepcorpsas1';
+  localesList = [
+    { code: "en-US", label: 'English' },
+    { code: "es", label: 'Spanish' }
+  ];
   consultaForm!: FormGroup;
 
   constructor(
@@ -48,4 +52,12 @@ export class AppComponent implements OnInit{
   cancelCreation(){
     this.consultaForm.reset();
  }
+
+ goHome(){
+    //this.enrutador.navigate([`/detalleEmpresa/`])
+ }
+
+ logout(): void {
+    //sessionStorage.setItem("creado", "NO")
+}
 }

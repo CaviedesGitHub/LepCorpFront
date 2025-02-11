@@ -27,6 +27,37 @@ body {
     background-color: bisque;
 }
 
+#nosotrosizq{
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    display: table-cell;
+    vertical-align: top;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+#nosotrosimg{
+    width: 50%;
+    height:auto;
+}
+
+#nosotrosder{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
+    display: table-cell;
+    vertical-align: top;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
 #izq{
     margin: 0;
     padding: 0;
