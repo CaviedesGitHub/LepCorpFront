@@ -1,22 +1,239 @@
+#inicial{
+    background-color: #F9A825;
+    padding: 1em;
+}
+
+#containerprincipal{
+    background-color: #F9A825;
+}
+
 #filacontacto{
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 #tituloprincipal{
-    margin-top: 3em;
+    margin-left: 5%;
+    margin-top: 1em;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+#divparrafoprincipal{
+    margin-left: 5%;
+}
+
+#parrafoprincipal{
+    font-size: 1.3rem;
+    line-height: 150%;
 }
 
 #divimgcontacto{
     text-align:center;
 }
 
+#divdivbotoncontacto{
+   text-align: center;    
+}
+
+#divbotoncontacto{
+    margin-left: 5%;
+}
+
 #imgcontacto{
     width:90%;
-    height:auto;
+    height:100%;
     max-width: 90%;
     min-width: 90%;
-    min-height: auto;
-    max-height: auto;
+    min-height: 100%;
+    max-height: 100%;
     border-radius: 1.0em;
+}
+
+
+
+#nosotros{
+    background-color: #FFFAF2;
+    padding: 1em;
+}
+
+#containernosotros{
+    background-color: #FFFAF2;
+}
+
+#filanosotros{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#titulonosotros{
+    margin-left: 5%;
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 120%;
+    color: #F9A825;
+}
+
+#divparrafonosotros{
+    margin-left: 5%;
+}
+
+#parrafonosotros{
+    font-size: 1.0rem;
+    line-height: 160%;
+}
+
+#divimgnosotros{
+    text-align:center;
+}
+
+#imgnosotros{
+    width:90%;
+    height:100%;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 1.0em;
+}
+
+#divbotonnosotros{
+    margin-left: 5%;
+}
+
+#enlacenosotros{
+    color: #F9A825;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+#servicios{
+    background-color: white;
+    padding: 1em;
+}
+
+#containerservicios{
+    background-color: white;
+}
+
+#filaservicios{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#tituloservicios{
+    margin-left: 5%;
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 120%;
+    color: #F9A825;
+}
+
+#divparrafoservicios{
+    margin-left: 5%;
+}
+
+#parrafoservicios{
+    font-size: 1.0rem;
+    line-height: 160%;
+}
+
+#divlistaservicios{
+    margin-left: 5%;
+}
+
+#listaservicios{
+    font-size: 1.0rem;
+    line-height: 160%;
+}
+
+
+#divimgservicios{
+    text-align:center;
+}
+
+#divdivbotonservicios{
+   text-align: center;    
+}
+
+#divbotonservicios{
+    margin-left: 5%;
+}
+
+#imgservicios{
+    width:90%;
+    height:100%;
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 1.0em;
+}
+
+#mensaje{
+    background-color: black;
+}
+
+#titulomensaje{
+    margin-left: 5%;
+    margin-top: 1em;
+    font-size: 3.0rem;
+    font-weight: bold;
+    line-height: 110%;
+    color: #F9A825;    
+}
+
+
+#divparrafomensaje{
+    margin-left: 5%;
+}
+
+#parrafomensaje{
+    font-size: 1.1rem;
+    line-height: 160%;
+    color: white;
+}
+
+#divlistamensaje{
+    margin-left: 5%;
+    margin-top: 3em;
+}
+
+#textoempresa{
+    font-size: 1.1rem;
+    color: #F9A825;
+    font-weight: bold;
+}
+
+#textodireccion{
+    font-size: 1.1rem;
+    color: white;
+}
+
+#imgtelefono{
+    color:#F9A825;
+}
+
+#divtextotelefono{
+    margin-top:1.5em;
+}
+
+#textotelefono{
+    font-size: 1.1rem;
+    color: #F9A825;
+    font-weight: bold;
+}
+
+#divtextocorreo{
+    margin-top:1.2em;
+}
+
+#textocorreo{
+    font-size: 1.1rem;
+    color: #F9A825;
+    font-weight: bold;
 }
