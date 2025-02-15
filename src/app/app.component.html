@@ -2,7 +2,7 @@
   <a i18n="Enlace principal usabilidad|Primer enlace al contenido principal usado por lectores" href="#main" class="skip-link">Skip to main content</a>
   <nav
     class="navbar navbar-expand-lg navbar-dark"
-    style="background-color: #4e477a"
+    style="background-color: #F9A825"
   >
     <div class="container-fluid">
       <a i18n="Nombre Empresa|Nombre que identifica la empresa" class="navbar-brand" href="#">LEP CORP</a>
@@ -43,9 +43,9 @@
               i18n="Empresa|Menu principal de los usuarios de tipo Empresa"
               class="nav-link active"
               aria-current="page"
-              routerLink="/detalleEmpresa"
+              routerLink=""
               data-cy="companyCompany"
-              >Inicio
+              ><span class="itemmenu">Inicio</span>
             </a>
           </li>
           <li class="nav-item">
@@ -53,9 +53,9 @@
               i18n="Puestos Empresa|Puestos ofrecidos por una empresa"
               class="nav-link active"
               aria-current="page"
-              routerLink="/puestosEmpresa"
+              routerLink="/nosotros"
               data-cy="puestosCompany"
-              >Sobre nosotros
+              ><span class="itemmenu">Sobre nosotros</span>
             </a>
           </li>          
           <li class="nav-item">
@@ -63,9 +63,9 @@
               i18n="Entrevistas|Entrevistas de un Candidato"
               class="nav-link active"
               aria-current="page"
-              routerLink="/entrevistasEmpresas/"
+              routerLink="/servicios/"
               data-cy="interCompany"
-              >Servicio</a
+              ><span class="itemmenu">Servicio</span></a
             >
           </li>
           <li class="nav-item">
@@ -73,9 +73,9 @@
               i18n="Pagos|Pagos hechos por las Empresas"
               class="nav-link active"
               aria-current="page"
-              routerLink="/construccion"
+              routerLink="/equipo"
               data-cy="payCompany"
-              >Equipo</a
+              ><span class="itemmenu">Equipo</span></a
             >
           </li>          
           <li class="nav-item">
@@ -83,9 +83,9 @@
               i18n="Candidato|Menu principal de los usuarios de tipo Candidato"
               class="nav-link active"
               aria-current="page"
-              routerLink="/detalleCandidato"
+              routerLink="/mensaje"
               data-cy="candCandidate"
-              >Contacto</a
+              ><span class="itemmenu">Contacto</span></a
             >
           </li>
           
@@ -99,7 +99,7 @@
   <router-outlet></router-outlet>
 </main>
 
-<footer class="page-footer py-0 my-0">
+<footer class="page-footer py-0 my-1">
   <div class="footer-copyright text-center py-0 my-0">
     <!-- <a i18n="Nombre Empresa|Nombre empresa en Pie de Pagina" routerLink="" id="colorFooterText2">ABC Jobs</a> -->
     <button 
@@ -134,161 +134,3 @@
     </p>
   </div>
 </footer>
-
-<div class="container mt-4">
-  <h2 class="text-center">Create a new Query</h2>
-  <form
-    [formGroup]="consultaForm"
-    (ngSubmit)="!consultaForm.invalid && createConsulta(consultaForm.value)"
-  >
-    <!--Contact-->
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="contacto">Contact</label>
-      <input
-        novalidate
-        id="contacto"
-        class="form-control"
-        formControlName="contacto"
-        placeholder="Contact's name"
-      />
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="
-          consultaForm.get('contacto')!.hasError('required') &&
-          consultaForm.get('contacto')!.touched
-        "
-      >
-        Contact required
-      </div>
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="consultaForm.get('contacto')!.hasError('minlength')"
-      >
-        contact too short
-      </div>
-    </div>
- 
-    <!--Company-->
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="empresa">Company</label>
-      <input
-        novalidate
-        id="empresa"
-        class="form-control"
-        formControlName="empresa"
-        placeholder="Company's name"
-      />
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="
-          consultaForm.get('empresa')!.hasError('required') &&
-          consultaForm.get('empresa')!.touched
-        "
-      >
-        Company required
-      </div>
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="consultaForm.get('empresa')!.hasError('minlength')"
-      >
-        Company too short
-      </div>
-    </div>
- 
-    <!-- Correo -->
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="correo">E-Mail</label>
-      <input
-        novalidate
-        id="correo"
-        class="form-control"
-        formControlName="correo"
-        placeholder="E-Mail"
-      />
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="
-          consultaForm.get('correo')!.hasError('required') &&
-          consultaForm.get('correo')!.touched
-        "
-      >
-        E-mail required
-      </div>
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="consultaForm.get('correo')!.hasError('minlength')"
-      >
-        E-Mail too short
-      </div>
-    </div>
-
-    <!-- Cell Phone -->
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="celular">Cell Phone</label>
-      <input
-        novalidate
-        id="celular"
-        class="form-control"
-        formControlName="celular"
-        placeholder="Cell Phone"
-      />
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="
-          consultaForm.get('celular')!.hasError('required') &&
-          consultaForm.get('celular')!.touched
-        "
-      >
-        Cell Phone required
-      </div>
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="consultaForm.get('celular')!.hasError('minlength')"
-      >
-        Cell Phone too short
-      </div>
-    </div>
-
-    <!-- Mensaje -->
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="mensaje">Message</label>
-      <input
-        novalidate
-        id="mensaje"
-        class="form-control"
-        formControlName="mensaje"
-        placeholder="Brief description of the consultation"
-      />
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="
-          consultaForm.get('mensaje')!.hasError('required') &&
-          consultaForm.get('mensaje')!.touched
-        "
-      >
-      Brief description of the consultation required
-      </div>
-      <div
-        class="alert alert-danger alert-dismissible fade show"
-        *ngIf="consultaForm.get('mensaje')!.hasError('maxlength')"
-      >
-        Brief description of the consultation too long
-      </div>
-    </div>
- 
-    <button
-      type="submit"
-      class="btn btn-primary"
-      [disabled]="!consultaForm.valid"
-    >
-      Create
-    </button>
-    <button
-      type="button"
-      class="btn btn-danger ml-3"
-      (click)="cancelCreation()"
-    >
-      Clear
-    </button>
-  </form>
- </div>

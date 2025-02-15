@@ -9,11 +9,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { MatIconModule } from '@angular/material/icon';
 import { InicioComponent } from './inicio/inicio.component';
+import { MensajeComponent } from './mensaje/mensaje.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ServicioComponent } from './servicio/servicio.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [					
       AppComponent,
-      InicioComponent
+      InicioComponent,
+      MensajeComponent,
+      NosotrosComponent,
+      ServicioComponent,
+      EquipoComponent
    ],
   imports: [
     BrowserModule,

@@ -5,11 +5,11 @@ import { ConsultaService } from '../Consulta.service';
 import { Consulta } from '../Consulta';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-mensaje',
+  templateUrl: './mensaje.component.html',
+  styleUrls: ['./mensaje.component.css']
 })
-export class InicioComponent implements OnInit {
+export class MensajeComponent implements OnInit {
 
   consultaForm!: FormGroup;
 

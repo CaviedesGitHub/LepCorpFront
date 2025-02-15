@@ -9,7 +9,7 @@
           </p>
         </div>
         <div id="divbotoncontacto">
-          <a href="/contacto/" class="btn btn-dark btn-lg active" role="button" aria-pressed="true"><span>Contacto</span></a>
+          <a href="#seccionmensaje" class="btn btn-dark btn-lg active" role="button" aria-pressed="true"><span>Contacto</span></a>
         </div>
       </div>
       <div id="divimgcontacto" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -33,7 +33,7 @@
           </p>
         </div>
         <div id="divbotonnosotros">
-          <a id="enlacenosotros" href="/contacto/" class="active" aria-pressed="true"><span>Sobre nosotros -></span></a>
+          <a id="enlacenosotros" href="/nosotros/" class="active" aria-pressed="true"><span>Sobre nosotros -></span></a>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
           </ul>
         </div>
         <div id="divbotonservicios">
-          <a id="enlacenosotros" href="/contacto/" class="active" aria-pressed="true"><span>Todos los servicios -></span></a>
+          <a id="enlacenosotros" href="/servicios/" class="active" aria-pressed="true"><span>Todos los servicios -></span></a>
         </div>
       </div>
       <div id="divimgservicios" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -69,7 +69,7 @@
 </section>
 
 
-<section id="mensaje">
+<section id="seccionmensaje">
   <div class="container-fluid my-0" id="containermensaje">
     <div id="filamensaje" class="row align-items-top">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -80,30 +80,213 @@
           </p>
         </div>
         <div id="divlistamensaje">
-          <div id="divdireccion">
-            <div id="divimgtelefono">
-              <img id="imgtelefono" src="/assets/imagenes/telefono.svg" alt="Bootstrap" width="32" height="32">
-              <img id="imgcorreo" src="/assets/imagenes/correo.svg" alt="Bootstrap" width="32" height="32">
-              <img id="imgubicacion" src="/assets/imagenes/ubicacion.svg" alt="Bootstrap" width="32" height="32">
-              <!-- <img id="imgtelefono" i18n-alt="txtAltViewCompany|Texto alternativo imagen empresa" class="logoPag" src="./assets/imagenes/telefono.svg"  alt="Image of a Company"> -->
-            </div>
+          <div id="divubicacion">
+            <div id="divimgubicacion">
+              <img id="imgubicacion" src="/assets/imagenes/ubicacion.svg" alt="Bootstrap" width="24" height="24">
+            </div> 
             <div id="divtextoempresa">
               <p id="textoempresa">Lep Corp SAS</p>
             </div>
+          </div>
+          <div id="divdireccion">
+            <div id="divimgubicacion2">
+              <img id="imgubicacion" src="/assets/imagenes/ubicacion.svg" alt="Bootstrap" width="24" height="24">
+            </div> 
             <div id="divtextodireccion">
               <p id="textodireccion">Mz E3 casa 8A Urb. Colombia, Valledupar, Cesar</p>
             </div>
           </div>
-          <div id="divtextotelefono">
-            <p id="textotelefono">3054419334</p>
+          <div id="divtelefono">
+            <div id="divimgtelefono">
+              <img id="imgtelefono" src="/assets/imagenes/telefono.svg" alt="Bootstrap" width="24" height="24">
+            </div>      
+            <div id="divtextotelefono">
+              <p id="textotelefono">3054419334</p>
+            </div>      
           </div>
-          <div id="divtextocorreo">
-            <p id="textocorreo">lepcorpsas@gmail.com</p>
+          <div id="divcorreo">
+            <div id="divimgcorreo">
+              <img id="imgcorreo" src="/assets/imagenes/correo.svg" alt="Bootstrap" width="24" height="24">
+            </div>      
+            <div id="divtextocorreo">
+              <p id="textocorreo">lepcorpsas&#64;gmail.com</p>
+            </div>      
           </div>
         </div>
       </div>
-      <div id="divimgservicios" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        
+      <div id="divdivmensaje" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="container-fluid my-4" id="divmensaje">
+          <form
+          [formGroup]="consultaForm"
+          (ngSubmit)="!consultaForm.invalid && createConsulta(consultaForm.value)"
+        >
+          <!--Contact-->
+          <h2 class="text-center">Envianos un mensaje</h2>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="contacto">Contacto</label>
+            <input
+              novalidate
+              id="contacto"
+              class="form-control"
+              formControlName="contacto"
+              placeholder="Digite el nombre del contacto"
+            />
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="
+                consultaForm.get('contacto')!.hasError('required') &&
+                consultaForm.get('contacto')!.touched
+              "
+            >
+              Se requiere el Contacto
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('contacto')!.hasError('minlength')"
+            >
+              Contacto muy corto
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('contacto')!.hasError('maxlength')"
+            >
+              Contacto muy largo
+            </div>
+          </div>
+       
+          <!--Company-->
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="empresa">Empresa</label>
+            <input
+              novalidate
+              id="empresa"
+              class="form-control"
+              formControlName="empresa"
+              placeholder="Digite nombre de la empresa o interesado"
+            />
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="
+                consultaForm.get('empresa')!.hasError('required') &&
+                consultaForm.get('empresa')!.touched
+              "
+            >
+              Empresa requerida
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('empresa')!.hasError('minlength')"
+            >
+              Empresa muy corta
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('empresa')!.hasError('maxlength')"
+            >
+              Empresa muy larga
+            </div>
+          </div>
+       
+          <!-- Correo -->
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="correo">Correo</label>
+            <input
+              novalidate
+              id="correo"
+              type="email"
+              class="form-control"
+              formControlName="correo"
+              placeholder="Digite el correo electronico"
+            />
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="
+                consultaForm.get('correo')!.hasError('required') &&
+                consultaForm.get('correo')!.touched
+              "
+            >
+              Se requiere el correo electronico
+            </div> 
+            <div 
+                 class="alert alert-danger alert-dismissible fade show"
+                 *ngIf="consultaForm.get('correo')!.hasError('pattern')"
+            >
+              Por favor ingrese un correo electronico valido
+            </div>
+          </div>
+      
+          <!-- Cell Phone -->
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="celular">Celular</label>
+            <input
+              novalidate
+              id="celular"
+              class="form-control"
+              formControlName="celular"
+              placeholder="Digite el numero celular"
+            />
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="
+                consultaForm.get('celular')!.hasError('required') &&
+                consultaForm.get('celular')!.touched
+              "
+            >
+              Se requiere el numero de celular
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('celular')!.hasError('pattern')"
+            >
+              Por favor ingrese un numero celular valido
+            </div>
+          </div>
+      
+          <!-- Mensaje -->
+          <div class="form-group mx-sm-3 mb-2">
+            <label i18n="lblAnotacionesEVResult|Etiqueta del campo Anotaciones" class="fst-italic fw-bold" for="mensaje">Mensaje</label>
+            <textarea 
+              novalidate
+              id="mensaje"
+              class="form-control"
+              formControlName="mensaje"
+              i18n-placeholder="holderAnotacionesEVResult|placeholder del campo anotaciones"
+              placeholder="Digite el mensaje"
+              data-cy="anotaResultEV"
+              rows="5">
+            </textarea>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="
+                consultaForm.get('mensaje')!.hasError('required') &&
+                consultaForm.get('mensaje')!.touched
+              "
+            >
+              <span i18n="msgErrorAnotaRequeridaEVResult|Anotaciones requeridas" >El Mensaje es requerido</span>
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              *ngIf="consultaForm.get('mensaje')!.hasError('maxlength')"
+            >
+            <span i18n="msgErrorAnotaLargaEVResult|Anotaciones muy largas" >Mensaje muy largo</span>
+            </div>
+          </div>        
+          <button id="botonsubmit" 
+            type="submit"
+            class="btn btn-warning"
+            [disabled]="!consultaForm.valid"
+          >
+            <span id="textoenviar">Enviar</span>
+          </button>
+          <!-- <button           form-control-sm
+            type="button"
+            class="btn btn-danger ml-3"
+            (click)="cancelCreation()"
+          >
+            Limpiar
+          </button> -->
+        </form>
+        </div>      
       </div>      
     </div>
   </div>  

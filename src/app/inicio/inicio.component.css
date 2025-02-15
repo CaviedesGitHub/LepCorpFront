@@ -174,7 +174,7 @@
     border-radius: 1.0em;
 }
 
-#mensaje{
+#seccionmensaje{
     background-color: black;
 }
 
@@ -237,3 +237,83 @@
     color: #F9A825;
     font-weight: bold;
 }
+
+#divubicacion{
+    display: flex;
+}
+
+#divdireccion{
+    display: flex;
+}
+
+#divtelefono{
+    display: flex;
+}
+
+#divcorreo{
+    display: flex;
+}
+
+#divimgubicacion{
+    align-self: baseline;
+}
+
+#divtextoempresa{
+    align-self: baseline;
+    margin-left: 5px;
+}
+
+#divimgubicacion2{
+    visibility: hidden;
+    align-self: baseline;
+}
+
+#divtextodireccion{
+    align-self: baseline;
+    margin-left: 5px;
+}
+
+#divimgtelefono{
+    align-self: baseline;
+}
+
+#divtextotelefono{
+    align-self: baseline;
+    margin-left: 5px;
+}
+
+#divimgcorreo{
+    align-self: baseline;
+}
+
+#divtextocorreo{
+    align-self: baseline;
+    margin-left: 5px;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+}
+
+#textoenviar{
+    font-weight: bold;
+}
+
+#botonsubmit{
+    margin-left: 15px;
+    margin-top: 1rem;
+}
+
+#divmensaje{
+    margin-top: 3rem;
+}
+
+#divdivmensaje{
+    margin-top: 0rem;
+}
+
+h2{
+    color: #F9A825;
+}
+

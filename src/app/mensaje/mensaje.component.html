@@ -1,0 +1,182 @@
+<div class="container-fluid my-4" id="principal">
+  <div class="row align-items-center">
+    <div class="col-0 col-sm-2 col-md-1 col-lg-1 col-xl-2">
+    </div>
+    <div class="col-12 col-sm-8 col-md-10 col-lg-10 col-xl-8">
+      <h1 class="text-center" id="titulomensaje">Contacto</h1>
+      <h2 class="text-center">Envianos un mensaje</h2>
+      <form
+        [formGroup]="consultaForm"
+        (ngSubmit)="!consultaForm.invalid && createConsulta(consultaForm.value)"
+      >
+        <!--Contact-->
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="contacto">Contacto</label>
+          <input
+            novalidate
+            id="contacto"
+            class="form-control"
+            formControlName="contacto"
+            placeholder="Digite el nombre del contacto"
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              consultaForm.get('contacto')!.hasError('required') &&
+              consultaForm.get('contacto')!.touched
+            "
+          >
+            Se requiere el Contacto
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('contacto')!.hasError('minlength')"
+          >
+            Contacto muy corto
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('contacto')!.hasError('maxlength')"
+          >
+            Contacto muy largo
+          </div>
+        </div>
+     
+        <!--Company-->
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="empresa">Empresa</label>
+          <input
+            novalidate
+            id="empresa"
+            class="form-control"
+            formControlName="empresa"
+            placeholder="Digite nombre de la empresa o interesado"
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              consultaForm.get('empresa')!.hasError('required') &&
+              consultaForm.get('empresa')!.touched
+            "
+          >
+            Empresa requerida
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('empresa')!.hasError('minlength')"
+          >
+            Empresa muy corta
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('empresa')!.hasError('maxlength')"
+          >
+            Empresa muy larga
+          </div>
+        </div>
+     
+        <!-- Correo -->
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="correo">Correo</label>
+          <input
+            novalidate
+            id="correo"
+            type="email"
+            class="form-control"
+            formControlName="correo"
+            placeholder="Digite el correo electronico"
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              consultaForm.get('correo')!.hasError('required') &&
+              consultaForm.get('correo')!.touched
+            "
+          >
+            Se requiere el correo electronico
+          </div> 
+          <div 
+               class="alert alert-danger alert-dismissible fade show"
+               *ngIf="consultaForm.get('correo')!.hasError('pattern')"
+          >
+            Por favor ingrese un correo electronico valido
+          </div>
+        </div>
+    
+        <!-- Cell Phone -->
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="celular">Celular</label>
+          <input
+            novalidate
+            id="celular"
+            class="form-control"
+            formControlName="celular"
+            placeholder="Digite el numero celular"
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              consultaForm.get('celular')!.hasError('required') &&
+              consultaForm.get('celular')!.touched
+            "
+          >
+            Se requiere el numero de celular
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('celular')!.hasError('pattern')"
+          >
+            Por favor ingrese un numero celular valido
+          </div>
+        </div>
+    
+        <!-- Mensaje -->
+        <div class="form-group mx-sm-3 mb-2">
+          <label i18n="lblAnotacionesEVResult|Etiqueta del campo Anotaciones" class="fst-italic fw-bold" for="mensaje">Mensaje</label>
+          <textarea 
+            novalidate
+            id="mensaje"
+            class="form-control "
+            formControlName="mensaje"
+            i18n-placeholder="holderAnotacionesEVResult|placeholder del campo anotaciones"
+            placeholder="Digite el mensaje"
+            data-cy="anotaResultEV"
+            rows="5">
+          </textarea>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              consultaForm.get('mensaje')!.hasError('required') &&
+              consultaForm.get('mensaje')!.touched
+            "
+          >
+            <span i18n="msgErrorAnotaRequeridaEVResult|Anotaciones requeridas" >El Mensaje es requerido</span>
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="consultaForm.get('mensaje')!.hasError('maxlength')"
+          >
+          <span i18n="msgErrorAnotaLargaEVResult|Anotaciones muy largas" >Mensaje muy largo</span>
+          </div>
+        </div>        
+        <button id="botonsubmit" 
+          type="submit"
+          class="btn btn-warning"
+          [disabled]="!consultaForm.valid"
+        >
+          <span id="textoenviar">Enviar</span>
+        </button>
+        <!-- <button           form-control-sm
+          type="button"
+          class="btn btn-danger ml-3"
+          (click)="cancelCreation()"
+        >
+          Limpiar
+        </button> -->
+      </form>      
+    </div>
+    <div class="col-0 col-sm-2 col-md-1 col-lg-1 col-xl-2">     
+    </div>
+  </div>
+</div>
+
