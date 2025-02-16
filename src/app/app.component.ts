@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Consulta } from './Consulta';
 import { ConsultaService } from './Consulta.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ export class AppComponent implements OnInit{
   constructor(
     private formBuilder: FormBuilder,
     private consultaService: ConsultaService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private enrutador: Router
   ) { }
 
   ngOnInit(): void {
@@ -59,7 +61,7 @@ export class AppComponent implements OnInit{
  }
 
  goHome(){
-    //this.enrutador.navigate([`/detalleEmpresa/`])
+    this.enrutador.navigate([``])
  }
 
  logout(): void {

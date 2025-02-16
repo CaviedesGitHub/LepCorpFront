@@ -1,0 +1,74 @@
+#seccion1{
+    background-color: white;
+}
+
+#containerprincipal{
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+}
+
+#tituloprincipal{
+    color: #F9A825;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 1.5em;
+    line-height: 140%;
+}
+
+#parrafoservicios{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-top: 1.5em;
+}
+
+.img-tarjeta{
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    height: 15rem;
+    max-height: 15rem;
+    min-height: 15rem;
+}
+
+#divtarjetas{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title{
+    color:#F9A825;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 120%;
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    margin-bottom: 0;
+    margin-left:0px;
+}
+
+.card-text{
+    font-size: 1.0rem;
+    line-height: 130%;
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    margin-top: 0;
+    margin-left:0px;
+}
+
+.card{
+    margin-top: 30px;
+}
+
+#filacards{
+    margin-top: 1.5em;
+}
+
+.card-body{
+    margin-left: 0;
+    padding-left: 0;
+}
