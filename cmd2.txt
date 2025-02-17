@@ -1,0 +1,1000 @@
+ 1027  python -m unittest pruebasTest.py
+ 1028  python -m unittest integrationPruebasTest.py
+ 1029  python -m unittest pruebasTest.py
+ 1030  python -m unittest integrationPruebasTest.py
+ 1031  python -m unittest pruebasTest.py
+ 1032  cd prueba3
+ 1033  cd motoremp
+ 1034  source venv/bin/activate
+ 1035  export FLASK_APP=application.py
+ 1036  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1037  flask run -p 5001
+ 1038  cd prueba3
+ 1039  cd validador
+ 1040  source venv/bin/activate
+ 1041  export FLASK_APP=application.py
+ 1042  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1043  flask run -p 5005
+ 1044  cd prueba3
+ 1045  cd perfilesRepo
+ 1046  source venv/bin/activate
+ 1047  export FLASK_APP=application.py
+ 1048  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1049  flask run -p 5004
+ 1050  cd prueba3
+ 1051  cd candidatoRepo
+ 1052  source venv/bin/activate
+ 1053  export FLASK_APP=application.py
+ 1054  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1055  flask run -p 5008
+ 1056  cd prueba3
+ 1057  cd empresasRepo
+ 1058  source venv/bin/activate
+ 1059  export FLASK_APP=application.py
+ 1060  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1061  flask run -p 5006
+ 1062  python -m unittest empresasTest.py
+ 1063  flask run -p 5006
+ 1064  python -m unittest integrationEmpresasTest.py
+ 1065  python -m unittest empresasTest.py
+ 1066  python -m unittest integrationsEmpresasTest.py
+ 1067  python -m unittest integrationEmpresasTest.py
+ 1068  cd prueba3
+ 1069  cd Auth
+ 1070  source venv/bin/activate
+ 1071  export FLASK_APP=application.py
+ 1072  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1073  flask run -p 5007
+ 1074  cd prueba3
+ 1075  cd gateway
+ 1076  source venv/bin/activate
+ 1077  export FLASK_APP=application.py
+ 1078  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1079  flask run -p 5000
+ 1080  /bin/python3
+ 1081  cd Desarrollo
+ 1082  cd angularF
+ 1083  ls
+ 1084  cd ultimodespliegue
+ 1085  ls
+ 1086  cd FrontendABCrepo
+ 1087  ls
+ 1088  git status
+ 1089  git add .
+ 1090  git status
+ 1091  git commit -m "Borrar version anterior"
+ 1092  git status
+ 1093  git add .
+ 1094  git status
+ 1095  git commit -m "version 1.3.0"
+ 1096  aws configure
+ 1097  git push -u origin master
+ 1098  git status
+ 1099  git log > commitDespliegueSem6.txt
+ 1100  cd Desarrollo
+ 1101  cd repo
+ 1102  cd clonsfinal
+ 1103  ls
+ 1104  cd validador
+ 1105  ls
+ 1106  cd prueba3
+ 1107  ls
+ 1108  cd validador
+ 1109  ls
+ 1110  git status
+ 1111  git add .
+ 1112  git status
+ 1113  git commit -m "Prueba Logs"
+ 1114  git push -u origin master
+ 1115  aws configure
+ 1116  git push -u origin master
+ 1117  aws configure
+ 1118  cd ..
+ 1119  cd auth
+ 1120  cd Auth
+ 1121  git status
+ 1122  git add .
+ 1123  git status
+ 1124  git commit -m "cloudwatch logs"
+ 1125  git push -u origin master
+ 1126  cd ..
+ 1127  cd Validador
+ 1128  cd validador
+ 1129  ls
+ 1130  git status
+ 1131  git add .
+ 1132  git status
+ 1133  git commit -m "cloudwatch logs"
+ 1134  aws configure
+ 1135  git status
+ 1136  git push -u origin master
+ 1137  cd ..
+ 1138  aws configure
+ 1139  ls
+ 1140  cd empresasRepo
+ 1141  git status
+ 1142  git add .
+ 1143  git status
+ 1144  git commit -m "pruebas historias sexta semana"
+ 1145  git push -u origin master
+ 1146  cd ..
+ 1147  cd PruebastecRepo
+ 1148  ls
+ 1149  git status
+ 1150  git add .
+ 1151  git status
+ 1152  git commit -m "pruebas histo sexta semana"
+ 1153  git push -u origin master
+ 1154  cd ..
+ 1155  cd candidatoRepo
+ 1156  git status
+ 1157  git add .
+ 1158  git status
+ 1159  git commit -m "pruebas hist sexta semana"
+ 1160  git push -u origin main
+ 1161  cd ..
+ 1162  ls
+ 1163  cd Auth
+ 1164  git status
+ 1165  git log > commitAuthSem6.txt
+ 1166  cd ..
+ 1167  cd candidatoRepo
+ 1168  git log > commitCandSem6.txt
+ 1169  cd ..
+ 1170  cd empresasRepo
+ 1171  git log > commitEmpresaSem6.txt
+ 1172  cd ..
+ 1173  cd PruebastecRepo
+ 1174  git log > commitPruebasSem6.txt
+ 1175  cd ..
+ 1176  cd validador
+ 1177  git log > commitValidaSem6.txt
+ 1178  cd ..
+ 1179  cd gateway
+ 1180  git status
+ 1181  git add .
+ 1182  git status
+ 1183  git commit -m "fix cors"
+ 1184  git push -u origin master
+ 1185  git status
+ 1186  git add .
+ 1187  git status
+ 1188  git commit -m "prueba cors 1"
+ 1189  git push -u origin master
+ 1190  git status
+ 1191  git add .
+ 1192  git status
+ 1193  git commit -m "deshacer"
+ 1194  git push -u origin master
+ 1195  cd ..
+ 1196  cd empresasRepo
+ 1197  ls
+ 1198  git status
+ 1199  git add .
+ 1200  git status
+ 1201  git commit -m "Prueba1 cors"
+ 1202  aws configure
+ 1203  git push -u origin master
+ 1204  git status
+ 1205  git add .
+ 1206  git status
+ 1207  git commit -m "Prueba2 cors"
+ 1208  git push -u origin master
+ 1209  git status
+ 1210  git add .
+ 1211  git status
+ 1212  git commit -m "Prueba3 cors"
+ 1213  git push -u origin master
+ 1214  git status
+ 1215  git add .
+ 1216  git status
+ 1217  git commit -m "Prueba4 cors"
+ 1218  git push -u origin master
+ 1219  cd Desarrollo
+ 1220  cd angularF
+ 1221  cd ABC_Jobs
+ 1222  nvm use --lts
+ 1223  ng e2e
+ 1224  ng serve
+ 1225  ng e2e
+ 1226  ng serve
+ 1227  ng e2e
+ 1228  ng serve
+ 1229  ng e2e
+ 1230  ng serve
+ 1231  ng build --base-href http://frontendabc-env.eba-txewrwr8.us-east-2.elasticbeanstalk.com/abc-jobs/
+ 1232  git status
+ 1233  git add .
+ 1234  git status
+ 1235  git commit -m "e2e sem sexta"
+ 1236  git push --set-upstream origin entrega2
+ 1237  ng e2e
+ 1238  git status
+ 1239  git log > commitABC_JobsSem6.txt
+ 1240  cd prueba3
+ 1241  cd PruebastecRepo
+ 1242  source venv/bin/activate
+ 1243  export FLASK_APP=application.py
+ 1244  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1245  flask run -p 5009
+ 1246  python -m unittest pruebasTest.py
+ 1247  python -m unittest integrationPruebasTest.py
+ 1248  python -m unittest pruebasTest.py
+ 1249  python -m unittest integrationPruebasTest.py
+ 1250  python -m unittest pruebasTest.py
+ 1251  python -m unittest integrationPruebasTest.py
+ 1252  python -m unittest pruebasTest.py
+ 1253  flask run -p 5009
+ 1254  coverage run -m unittest integrationPruebasTest -v
+ 1255  coverage report -m
+ 1256  cd prueba3
+ 1257  cd motoremp
+ 1258  source venv/bin/activate
+ 1259  export FLASK_APP=application.py
+ 1260  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1261  flask run -p 5001
+ 1262  cd prueba3
+ 1263  cd validador
+ 1264  source venv/bin/activate
+ 1265  export FLASK_APP=application.py
+ 1266  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1267  flask run -p 5005
+ 1268  cd prueba3
+ 1269  cd perfilesRepo
+ 1270  source venv/bin/activate
+ 1271  export FLASK_APP=application.py
+ 1272  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1273  flask run -p 5004
+ 1274  cd prueba3
+ 1275  cd candidatoRepo
+ 1276  source venv/bin/activate
+ 1277  export FLASK_APP=application.py
+ 1278  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1279  flask run -p 5008
+ 1280  python -m unittest candidatoTest.py
+ 1281  python -m unittest integrationCandidatoTest.py
+ 1282  python -m unittest candidatoTest.py
+ 1283  python -m unittest integrationCandidatoTest.py
+ 1284  python -m unittest candidatoTest.py
+ 1285  python -m unittest integrationCandidatoTest.py
+ 1286  python -m unittest candidatoTest.py
+ 1287  python -m unittest integrationCandidatoTest.py
+ 1288  python -m unittest candidatoTest.py
+ 1289  python -m unittest integrationCandidatoTest.py
+ 1290  flask run -p 5008
+ 1291  python -m unittest integrationCandidatoTest.py
+ 1292  coverage run -m unittest integrationCandidatoTest.py
+ 1293  coverage report -m
+ 1294  flask run -p 5008
+ 1295  cd prueba3
+ 1296  cd empresasRepo
+ 1297  source venv/bin/activate
+ 1298  export FLASK_APP=application.py
+ 1299  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1300  flask run -p 5006
+ 1301  python -m unittest empresasTest.py
+ 1302  python -m unittest integrationEmpresasTest.py
+ 1303  python -m unittest empresasTest.py
+ 1304  python -m unittest integrationEmpresasTest.py
+ 1305  flask run -p 5006
+ 1306  python -m unittest integrationEmpresasTest.py
+ 1307  coverage run -m unittest empresasTest -v
+ 1308  coverage run -m unittest integrationEmpresasTest -v
+ 1309  coverage report -m
+ 1310  flask run -p 5006
+ 1311  cd prueba3
+ 1312  cd Auth
+ 1313  source venv/bin/activate
+ 1314  export FLASK_APP=application.py
+ 1315  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1316  flask run -p 5007
+ 1317  cd prueba3
+ 1318  cd gateway
+ 1319  source venv/bin/activate
+ 1320  export FLASK_APP=application.py
+ 1321  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1322  flask run -p 5000
+ 1323  cd Desarrollo
+ 1324  cd angularF
+ 1325  cd ABC_jobs
+ 1326  cd ABC_Jobs
+ 1327  ls
+ 1328  git status
+ 1329  nvm use --lts
+ 1330  ng serve
+ 1331  git status
+ 1332  git add .
+ 1333  git status
+ 1334  git commit -m "iconos"
+ 1335  git push --set-upstream origin entrega2
+ 1336  ng serve
+ 1337  git status
+ 1338  git add .
+ 1339  git status
+ 1340  git commit -m "colores y mensaje"
+ 1341  git push --set-upstream origin entrega2
+ 1342  cd prueba3
+ 1343  cd PruebastecRepo
+ 1344  source venv/bin/activate
+ 1345  export FLASK_APP=application.py
+ 1346  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1347  flask run -p 5009
+ 1348  cd prueba3
+ 1349  cd motoremp
+ 1350  source venv/bin/activate
+ 1351  export FLASK_APP=application.py
+ 1352  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1353  flask run -p 5001
+ 1354  cd prueba3
+ 1355  cd candidatoRepo
+ 1356  source venv/bin/activate
+ 1357  export FLASK_APP=application.py
+ 1358  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1359  flask run -p 5008
+ 1360  cd prueba3
+ 1361  cd empresasRepo
+ 1362  source venv/bin/activate
+ 1363  export FLASK_APP=application.py
+ 1364  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1365  flask run -p 5006
+ 1366  cd prueba3
+ 1367  cd Auth
+ 1368  source venv/bin/activate
+ 1369  export FLASK_APP=application.py
+ 1370  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1371  flask run -p 5007
+ 1372  cd prueba3
+ 1373  cd gateway
+ 1374  source venv/bin/activate
+ 1375  export FLASK_APP=application.py
+ 1376  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1377  flask run -p 5000
+ 1378  cd AndroidStudioProjects
+ 1379  ls
+ 1380  cd aftererror
+ 1381  ls
+ 1382  cd Abcjobsmovil
+ 1383  cd AbcJobsmovil
+ 1384  cd AbcJobsMovil
+ 1385  ls
+ 1386  git status
+ 1387  git add .
+ 1388  git status
+ 1389  git commit -m "listar entrevistas abc y fix puestos"
+ 1390  git status
+ 1391  git push --set-upstream origin entrega2
+ 1392  git status
+ 1393  git add .
+ 1394  git status
+ 1395  git commit -m "Lista de Pruebas ABC"
+ 1396  git push --set-upstream origin entrega2
+ 1397  git status
+ 1398  git add .
+ 1399  git status
+ 1400  git commit -m "Asigna candidato Puesto ABC"
+ 1401  git push --set-upstream origin entrega2
+ 1402  git status
+ 1403  git add .
+ 1404  git status
+ 1405  git commit -m "Actualiza Nota de Prueba"
+ 1406  git push --set-upstream origin entrega2
+ 1407  cd Desarrollo
+ 1408  cd angularF
+ 1409  cd ABC_Jobs
+ 1410  nvm use --lts
+ 1411  ng serve
+ 1412  git status
+ 1413  git add .
+ 1414  git status
+ 1415  git commit -m "colores2"
+ 1416  git push --set-upstream origin entrega2
+ 1417  git status
+ 1418  ng build --base-href http://frontendabc-env.eba-txewrwr8.us-east-2.elasticbeanstalk.com/abc-jobs/
+ 1419  cd Desarrollo
+ 1420  cd angularF
+ 1421  cd ultimodespliegue
+ 1422  ls
+ 1423  cd FrontendABCrepo
+ 1424  git status
+ 1425  git add .
+ 1426  git status
+ 1427  git commit -m "Limpieza"
+ 1428  git status
+ 1429  git add .
+ 1430  git status
+ 1431  git commit -m "v1.3.0 fix colores"
+ 1432  git push -u origin master
+ 1433  asw configure
+ 1434  aws configure
+ 1435  git push -u origin master
+ 1436  cd prueba3
+ 1437  cd PruebastecRepo
+ 1438  source venv/bin/activate
+ 1439  export FLASK_APP=application.py
+ 1440  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1441  flask run -p 5009
+ 1442  cd prueba3
+ 1443  cd motoremp
+ 1444  source venv/bin/activate
+ 1445  export FLASK_APP=application.py
+ 1446  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1447  flask run -p 5001
+ 1448  cd prueba3
+ 1449  cd validador
+ 1450  source venv/bin/activate
+ 1451  export FLASK_APP=application.py
+ 1452  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1453  flask run -p 5005
+ 1454  cd prueba3
+ 1455  cd perfilesRepo
+ 1456  source venv/bin/activate
+ 1457  export FLASK_APP=application.py
+ 1458  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1459  flask run -p 5004
+ 1460  cd prueba3
+ 1461  cd candidatoRepo
+ 1462  source venv/bin/activate
+ 1463  export FLASK_APP=application.py
+ 1464  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1465  flask run -p 5008
+ 1466  cd prueba3
+ 1467  cd empresasRepo
+ 1468  source venv/bin/activate
+ 1469  export FLASK_APP=application.py
+ 1470  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1471  flask run -p 5006
+ 1472  cd prueba3
+ 1473  cd Auth
+ 1474  source venv/bin/activate
+ 1475  export FLASK_APP=application.py
+ 1476  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1477  flask run -p 5007
+ 1478  cd prueba3
+ 1479  cd gateway
+ 1480  source venv/bin/activate
+ 1481  export FLASK_APP=application.py
+ 1482  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1483  flask run -p 5000
+ 1484  cd prueba3
+ 1485  cd PruebastecRepo
+ 1486  source venv/bin/activate
+ 1487  export FLASK_APP=application.py
+ 1488  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1489  flask run -p 5009
+ 1490  cd prueba3
+ 1491  cd motoremp
+ 1492  source venv/bin/activate
+ 1493  export FLASK_APP=application.py
+ 1494  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1495  flask run -p 5001
+ 1496  cd prueba3
+ 1497  cd validador
+ 1498  source venv/bin/activate
+ 1499  export FLASK_APP=application.py
+ 1500  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1501  flask run -p 5005
+ 1502  cd prueba3
+ 1503  cd perfilesRepo
+ 1504  source venv/bin/activate
+ 1505  export FLASK_APP=application.py
+ 1506  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1507  flask run -p 5004
+ 1508  cd prueba3
+ 1509  cd candidatoRepo
+ 1510  source venv/bin/activate
+ 1511  export FLASK_APP=application.py
+ 1512  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1513  flask run -p 5008
+ 1514  cd prueba3
+ 1515  cd empresasRepo
+ 1516  source venv/bin/activate
+ 1517  export FLASK_APP=application.py
+ 1518  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1519  flask run -p 5006
+ 1520  cd prueba3
+ 1521  cd Auth
+ 1522  source venv/bin/activate
+ 1523  export FLASK_APP=application.py
+ 1524  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1525  flask run -p 5007
+ 1526  cd prueba3
+ 1527  cd gateway
+ 1528  source venv/bin/activate
+ 1529  export FLASK_APP=application.py
+ 1530  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1531  flask run -p 5000
+ 1532  cd Desarrollo
+ 1533  ls
+ 1534  mv apache-jmeter-5.6.3 jmeter
+ 1535  ls
+ 1536  cd jmeter
+ 1537  jmeter
+ 1538  cd bin
+ 1539  jmeter
+ 1540  ls
+ 1541  jmeter.sh
+ 1542  source jmeter.sh
+ 1543  cd prueba3
+ 1544  cd PruebastecRepo
+ 1545  source venv/bin/activate
+ 1546  export FLASK_APP=application.py
+ 1547  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1548  flask run -p 5009
+ 1549  cd prueba3
+ 1550  cd motoremp
+ 1551  source venv/bin/activate
+ 1552  export FLASK_APP=application.py
+ 1553  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1554  flask run -p 5001
+ 1555  cd prueba3
+ 1556  cd validador
+ 1557  source venv/bin/activate
+ 1558  export FLASK_APP=application.py
+ 1559  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1560  flask run -p 5005
+ 1561  cd prueba3
+ 1562  cd empresasRepo
+ 1563  source venv/bin/activate
+ 1564  export FLASK_APP=application.py
+ 1565  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1566  flask run -p 5006
+ 1567  cd prueba3
+ 1568  cd Auth
+ 1569  source venv/bin/activate
+ 1570  export FLASK_APP=application.py
+ 1571  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1572  flask run -p 5007
+ 1573  cd prueba3
+ 1574  cd gateway
+ 1575  source venv/bin/activate
+ 1576  export FLASK_APP=application.py
+ 1577  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1578  flask run -p 5000
+ 1579  ls
+ 1580  cd Descargas
+ 1581  ls
+ 1582  ssh -i VerLog.pem ec2-user@3.12.113.116
+ 1583  clear
+ 1584  ssh -i VerLog.pem ec2-user@ec2-3-12-113-116.us-east-2.compute.amazonaws.com
+ 1585  cd Desarrollo
+ 1586  cd repo
+ 1587  cd clonsfinal
+ 1588  cd prueba3
+ 1589  cd validador
+ 1590  git status
+ 1591  git add .
+ 1592  git status
+ 1593  git commit -m "fix prueba1"
+ 1594  git push -u origin master
+ 1595  aws configure
+ 1596  git push -u origin master
+ 1597  git status
+ 1598  git add .
+ 1599  git status
+ 1600  git commit -m "fix prueba2"
+ 1601  git push -u origin master
+ 1602  history > h.txt
+ 1603  cat h.txt
+ 1604  history > h.txt
+ 1605  cat h.txt
+ 1606  nano h.txt
+ 1607  cd ..
+ 1608  cd AndroidStudioProjects
+ 1609  dir
+ 1610  cd aftererror
+ 1611  dir
+ 1612  ls
+ 1613  cd AbcJobsMovil
+ 1614  dir
+ 1615  git status
+ 1616  git log > commitsmovil7.txt
+ 1617  cd prueba3
+ 1618  cd PruebastecRepo
+ 1619  source venv/bin/activate
+ 1620  export FLASK_APP=application.py
+ 1621  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1622  flask run -p 5009
+ 1623  python -m unittest pruebasTest.py
+ 1624  aws configure
+ 1625  python -m unittest pruebasTest.py
+ 1626  flask run -p 5009
+ 1627  python -m unittest pruebasTest.py
+ 1628  python -m unittest integrationPruebasTest.py
+ 1629  python -m unittest pruebasTest.py
+ 1630  cd prueba3
+ 1631  cd motoremp
+ 1632  source venv/bin/activate
+ 1633  export FLASK_APP=application.py
+ 1634  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1635  flask run -p 5001
+ 1636  python -m unittest motorTest.py
+ 1637  python -m unittest integrationMotorTest.py
+ 1638  flask run -p 5001
+ 1639  python -m unittest motorTest.py
+ 1640  flask run -p 5001
+ 1641  cd prueba3
+ 1642  cd perfilesRepo
+ 1643  source venv/bin/activate
+ 1644  export FLASK_APP=application.py
+ 1645  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1646  flask run -p 5004
+ 1647  python -m unittest perfilesTest.py
+ 1648  python -m unittest integrationPerfilesTest.py
+ 1649  python -m unittest perfilesTest.py
+ 1650  flask run -p 5004
+ 1651  python -m unittest perfilesTest.py
+ 1652  flask run -p 5004
+ 1653  cd prueba3
+ 1654  cd candidatoRepo
+ 1655  source venv/bin/activate
+ 1656  export FLASK_APP=application.py
+ 1657  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1658  flask run -p 5008
+ 1659  python -m unittest candidatoTest.py
+ 1660  python -m unittest integrationCandidatoTest.py
+ 1661  python -m unittest candidatoTest.py
+ 1662  flask run -p 5008
+ 1663  cd prueba3
+ 1664  cd empresasRepo
+ 1665  source venv/bin/activate
+ 1666  export FLASK_APP=application.py
+ 1667  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1668  flask run -p 5006
+ 1669  python -m unittest empresasTest.py
+ 1670  python -m unittest integrationEmpresasTest.py
+ 1671  python -m unittest empresasTest.py
+ 1672  python -m unittest integrationEmpresasTest.py
+ 1673  clear
+ 1674  python -m unittest integrationEmpresasTest.py
+ 1675  python -m unittest empresasTest.py
+ 1676  clear
+ 1677  python -m unittest empresasTest.py
+ 1678  flask run -p 5006
+ 1679  python -m unittest empresasTest.py
+ 1680  python -m unittest integrationEmpresasTest.py
+ 1681  python -m unittest empresasTest.py
+ 1682  flask run -p 5006
+ 1683  python -m unittest empresasTest.py
+ 1684  flask run -p 5006
+ 1685  cd prueba3
+ 1686  cd gateway
+ 1687  source venv/bin/activate
+ 1688  export FLASK_APP=application.py
+ 1689  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1690  flask run -p 5000
+ 1691  sudo docker ps -as
+ 1692  sudo docker ps 
+ 1693  cd Desarrollo
+ 1694  cd angularF
+ 1695  ls
+ 1696  cd ABC_Jobs
+ 1697  ls
+ 1698  sudo dockeri mages
+ 1699  sudo docker images
+ 1700  sudo docker run -it abc_jobs1
+ 1701  docker ps
+ 1702  sudo docker ps
+ 1703  sudo docker container run -d -p 80:8081 ABC_Jobs1
+ 1704  sudo docker container run -d -p 80:8081 abc_jobs1
+ 1705  sudo docker container run -d -p 8081:80 abc_jobs1
+ 1706  sudo docker ps
+ 1707  sudo docker stop 7201cdea818b
+ 1708  sudo docker ps
+ 1709  sudo docker build -t abc_jobs2 .
+ 1710  sudo docker container run -d -p 8081:80 abc_jobs2
+ 1711  sudo docker ps
+ 1712  sudo docker stop 9f52189b753a
+ 1713  sudo docker build -t abc_jobs3 .
+ 1714  sudo docker container run -d -p 8081:80 abc_jobs3
+ 1715  history > com.txt
+ 1716  git status
+ 1717  cd ..
+ 1718  ls
+ 1719  cd ABC_JobsAuto
+ 1720  ls
+ 1721  cd FrontABC
+ 1722  ls
+ 1723  git status
+ 1724  git add .
+ 1725  git status
+ 1726  git commit -m "Limpieza"
+ 1727  git status
+ 1728  git add .
+ 1729  git status
+ 1730  git commit -m "ultima version"
+ 1731  git status
+ 1732  sudo docker build -t abc_jobs1 .
+ 1733  sudo docker container run -d -p 8081:80 abc_jobs1
+ 1734  sudo docker ps
+ 1735  sudo docker stop baf04d78beed
+ 1736  sudo docker container run -d -p 8081:80 abc_jobs1
+ 1737  git status
+ 1738  git add .
+ 1739  git status
+ 1740  git commit -m "fix package json"
+ 1741  git push -u origin master
+ 1742  aws configure
+ 1743  git push -u origin master
+ 1744  sudo docker build -t abc_jobsx1 .
+ 1745  sudo docker container run -d -p 8081:80 abc_jobsx1
+ 1746  sudo docker ps
+ 1747  sudo docker stop 0dcccef92818
+ 1748  sudo docker container run -d -p 8081:80 abc_jobsx1
+ 1749  sudo docker ps -a
+ 1750  docker rm $(docker ps -a -f status=exited -q)
+ 1751  sudo docker rm $(docker ps -a -f status=exited -q)
+ 1752  sudo docker rm $(sudo docker ps -a -f status=exited -q)
+ 1753  sudo doker ps
+ 1754  sudo docker ps
+ 1755  sudo docker stop 31fc292eaf8e
+ 1756  sudo docker rm $(sudo docker ps -a -f status=exited -q)
+ 1757  sudo docker ps
+ 1758  sudo docker images -a
+ 1759  docker system prune -a
+ 1760  sudo docker system prune -a
+ 1761  sudo docker images -a
+ 1762  ls
+ 1763  git status
+ 1764  git add .
+ 1765  git status
+ 1766  git commit -m "arreglos"
+ 1767  sudo docker build -t abc_jobs .
+ 1768  sudo docker container run -d -p 8081:80 abc_jobs
+ 1769  sudo docker ps
+ 1770  sudo docker stop 6ba52f6beb58
+ 1771  sudo docker container run -d -p 8082:80 abc_jobs
+ 1772  sudo docker exec ls /
+ 1773  sudo docker ps
+ 1774  sudo docker exec vigorous_kalam ls /
+ 1775  sudo docker exec vigorous_kalam ls /usr
+ 1776  sudo docker exec vigorous_kalam ls /usr/local
+ 1777  sudo docker exec vigorous_kalam ls /usr/local/share
+ 1778  sudo docker exec vigorous_kalam ls /usr/share
+ 1779  sudo docker exec vigorous_kalam ls /usr/share/nginx
+ 1780  sudo docker exec vigorous_kalam ls /usr/share/nginx/html
+ 1781  sudo docker exec vigorous_kalam ls /usr/share/nginx/html/abc-jobs
+ 1782  sudo docker exec vigorous_kalam ls /usr/share/nginx/html/abc-jobs/es
+ 1783  sudo docker ps
+ 1784  sudo docker stop 560d3dc629fc
+ 1785  sudo docker build -t abc_jobs1 .
+ 1786  sudo docker ps
+ 1787  sudo docker ps -a
+ 1788  sudo docker container run -d -p 8083:80 abc_jobs1
+ 1789  git status
+ 1790  git add .
+ 1791  git status
+ 1792  git commit -m "otro cambio"
+ 1793  git push
+ 1794  git status
+ 1795  sudo docker build -t abc_jobsx1 .
+ 1796  sudo docker container run -d -p 8084:80 abc_jobsx1
+ 1797  git status
+ 1798  gt add .
+ 1799  git status
+ 1800  git add .
+ 1801  git status
+ 1802  git commit -m "fix"
+ 1803  git push -u origin master
+ 1804  cd prueba3
+ 1805  cd PruebastecRepo
+ 1806  source venv/bin/activate
+ 1807  export FLASK_APP=application.py
+ 1808  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1809  flask run -p 5009
+ 1810  cd prueba3
+ 1811  cd validador
+ 1812  source venv/bin/activate
+ 1813  export FLASK_APP=application.py
+ 1814  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1815  flask run -p 5005
+ 1816  cd prueba3
+ 1817  cd perfilesRepo
+ 1818  source venv/bin/activate
+ 1819  export FLASK_APP=application.py
+ 1820  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1821  flask run -p 5004
+ 1822  cd prueba3
+ 1823  cd candidatoRepo
+ 1824  source venv/bin/activate
+ 1825  export FLASK_APP=application.py
+ 1826  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1827  flask run -p 5008
+ 1828  cd prueba3
+ 1829  cd empresasRepo
+ 1830  source venv/bin/activate
+ 1831  export FLASK_APP=application.py
+ 1832  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1833  flask run -p 5006
+ 1834  cd prueba3
+ 1835  cd Auth
+ 1836  source venv/bin/activate
+ 1837  export FLASK_APP=application.py
+ 1838  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1839  flask run -p 5007
+ 1840  cd prueba3
+ 1841  cd gateway
+ 1842  source venv/bin/activate
+ 1843  export FLASK_APP=application.py
+ 1844  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1845  flask run -p 5000
+ 1846  cd prueba3
+ 1847  cd PruebastecRepo
+ 1848  source venv/bin/activate
+ 1849  export FLASK_APP=application.py
+ 1850  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1851  flask run -p 5009
+ 1852  cd prueba3
+ 1853  cd motoremp
+ 1854  source venv/bin/activate
+ 1855  export FLASK_APP=application.py
+ 1856  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1857  flask run -p 5001
+ 1858  cd prueba3
+ 1859  cd validador
+ 1860  source venv/bin/activate
+ 1861  export FLASK_APP=application.py
+ 1862  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1863  flask run -p 5005
+ 1864  cd prueba3
+ 1865  cd perfilesRepo
+ 1866  source venv/bin/activate
+ 1867  export FLASK_APP=application.py
+ 1868  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1869  flask run -p 5004
+ 1870  cd prueba3
+ 1871  cd candidatoRepo
+ 1872  source venv/bin/activate
+ 1873  export FLASK_APP=application.py
+ 1874  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1875  flask run -p 5008
+ 1876  cd prueba3
+ 1877  cd empresasRepo
+ 1878  source venv/bin/activate
+ 1879  export FLASK_APP=application.py
+ 1880  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1881  flask run -p 5006
+ 1882  cd prueba3
+ 1883  cd Auth
+ 1884  source venv/bin/activate
+ 1885  export FLASK_APP=application.py
+ 1886  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1887  flask run -p 5007
+ 1888  cd prueba3
+ 1889  cd gateway
+ 1890  source venv/bin/activate
+ 1891  export FLASK_APP=application.py
+ 1892  export APP_SETTINGS_MODULE=config.DevelopmentConfig
+ 1893  flask run -p 5000
+ 1894  cd Desarrollo
+ 1895  ls
+ 1896  cd repo
+ 1897  dir
+ 1898  mkdir fastapi
+ 1899  cd fastapi
+ 1900  dir
+ 1901  git clone https://github.com/PacktPublishing/Building-Python-Microservices-with-FastAPI.git
+ 1902  ls
+ 1903  cd Building-Python-Microservices-with-FastAPI
+ 1904  ls
+ 1905  code
+ 1906  cd ..
+ 1907  cd fastapi
+ 1908  dir
+ 1909  mkdir abcjobs
+ 1910  cd abcjobs
+ 1911  mkdir empresas
+ 1912  cd empresas
+ 1913  dir
+ 1914  virtualenv venv
+ 1915  source venv/bin/activate
+ 1916  pythom -m pip install --upgrade pip
+ 1917  python -m pip install --upgrade pip
+ 1918  cd empresas
+ 1919  virtualenv venv
+ 1920  source venv/bin/activate
+ 1921  python -m pip install --upgrade pip
+ 1922  pip install fastapi[all]
+ 1923  pip install uvicorn
+ 1924  pip install python-multipart
+ 1925  pip install dependency-injector
+ 1926  pip install lagom
+ 1927  pip install loguru
+ 1928  pip install httpx
+ 1929  pip install requests
+ 1930  pip install python-dotenv
+ 1931  pip install SQLAlchemy
+ 1932  pip install psycopg2
+ 1933  pip install aiopg
+ 1934  pip install asyncpg
+ 1935  pip freeze > requirements.txt
+ 1936  uvicorn main:app --reload
+ 1937  source venv/bin/activate
+ 1938  pip install -r requirements.txt
+ 1939  cd empresas
+ 1940  uvicorn main:app --reload
+ 1941  source venv/bin/activate
+ 1942  cd empresas
+ 1943  uvicorn main:app --reload
+ 1944  source venv/bin/activate
+ 1945  cd empresas
+ 1946  uvicorn main:app --reload
+ 1947  /bin/python3 /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+ 1948  cd ch01
+ 1949  virtualenv venv
+ 1950  sourve venv/bin/activate
+ 1951  source venv/bin/activate
+ 1952  pip install -r requirements.txt
+ 1953  uvicorn main:app --reload
+ 1954  source venv/bin/activate
+ 1955  cd empresas
+ 1956  uvicorn main:app --reload
+ 1957  source venv/bin/activate
+ 1958  cd empresas
+ 1959  uvicorn main:app --reload
+ 1960  /bin/python3 /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+ 1961  source venv/bin/activate
+ 1962  cd empresas
+ 1963  uvicorn main:app --reload
+ 1964  nvm use --lts
+ 1965  ls
+ 1966  cd Desarrollo
+ 1967  cd angularF
+ 1968  ls
+ 1969  ng new lepcorpsas1
+ 1970  git status
+ 1971  cd lepcorpsas1
+ 1972  git status
+ 1973  ng add @angular/material
+ 1974  npm install jquery - save
+ 1975  npm install bootstrap - save
+ 1976  ng serve
+ 1977  npm install popper - save
+ 1978  npm i --save-dev @types/jquery
+ 1979  ng serve
+ 1980  /bin/python3 /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+ 1981  ls
+ 1982  cd desarrollo
+ 1983  cd Desarrollo
+ 1984  ls
+ 1985  git clone https://github.com/CaviedesGitHub/LepCorpBackend.git
+ 1986  cd lepCorpBackend
+ 1987  cd LepCorpBackend
+ 1988  ls
+ 1989  cd Desarrollo
+ 1990  ls
+ 1991  cd angularF
+ 1992  ls
+ 1993  cd lepcorpsas1
+ 1994  ls
+ 1995  git status
+ 1996  nvm use --lts
+ 1997  ng serve
+ 1998  /bin/python3 /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+ 1999  /bin/python3 /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/lepcorp1/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+ 2000  cd Desarrollo
+ 2001  ls
+ 2002  cd angularF
+ 2003  cd lepcorpsas1
+ 2004  ls
+ 2005  git status
+ 2006  nvm use --lts
+ 2007  ng serve
+ 2008  git status
+ 2009  git add .
+ 2010  git status
+ 2011  git commit -m "Buen adelanto. Toastr, inicio y contacto"
+ 2012  git push
+ 2013  ng serve
+ 2014  git status
+ 2015  git add .
+ 2016  git status
+ 2017  git commit -m "Todo. faltan imagenes."
+ 2018  git push
+ 2019  ng serve
+ 2020  git status
+ 2021  git add .
+ 2022  git status
+ 2023  git commit -m "Primera version. Entrega1"
+ 2024  git push
+ 2025  ng serve
+ 2026  history > cmd2.txt
